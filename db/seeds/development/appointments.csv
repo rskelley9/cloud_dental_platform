@@ -1,4 +1,4 @@
-date,dentist_id,time_slot_id,chair_id,hygienist_id,patient_id,type,patient_confirmed,confirmation_sent
-10/21/2014,<%= sprig_record(TimeSlot, 1).id %>,<%= sprig_record(Chair, 1).id %>, <%= sprig_record(Hygienist, 1).id %>, <%= sprig_record(Patient, 1).id %>, surgery,false,false
-10/21/2014,<%= sprig_record(TimeSlot, 2).id %>,<%= sprig_record(Chair, 2).id %>, <%= sprig_record(Hygienist, 2).id %>, <%= sprig_record(Patient, 2).id %>, root canal,false,false
-10/22/2014,<%= sprig_record(TimeSlot, 2).id %>,<%= sprig_record(Chair, 2).id %>, <%= sprig_record(Hygienist, 2).id %>, <%= sprig_record(Patient, 2).id %>, root canal,false,false
+date,dentist_id,time_slot_id,chair_id,hygienist_id,patient_id,of_type,patient_confirmed,confirmation_sent
+10/21/2014,<%= sprig_record(TimeSlot, 1).id %>, <%= sprig_record(Hygienist, 1).id %>, <%= sprig_record(Patient, 1).id %>, surgery,false,false
+10/21/2014,<%= sprig_record(TimeSlot, 2).id %>, <%= sprig_record(Hygienist, 2).id %>, <%= sprig_record(Patient, 2).id %>, root canal,false,false
+10/22/2014,<%= sprig_record(TimeSlot, 2).id %>, <%= sprig_record(Hygienist, 2).id %>, <%= sprig_record(Patient, 2).id %>, root canal,false,false

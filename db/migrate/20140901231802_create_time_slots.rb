@@ -5,7 +5,7 @@ class CreateTimeSlots < ActiveRecord::Migration
       t.string :start_time
       t.string :end_time
       t.date :date
-      t.boolean :booked, default: false
+      t.boolean :booked, default: false #should we remove this?
 
       t.timestamps
     end

@@ -62,12 +62,10 @@ ActiveRecord::Schema.define(version: 20140908100408) do
   end
 
   create_table "appointments", force: true do |t|
-    t.date     "date"
     t.integer  "dentist_id"
-    t.integer  "chair_id"
     t.integer  "hygienist_id"
     t.integer  "patient_id"
-    t.string   "type"
+    t.string   "of_type"
     t.boolean  "patient_confirmed"
     t.boolean  "confirmation_sent"
     t.datetime "created_at"
@@ -77,6 +75,7 @@ ActiveRecord::Schema.define(version: 20140908100408) do
   create_table "bookings", force: true do |t|
     t.integer  "time_slot_id"
     t.integer  "appointment_id"
+    t.integer  "chair_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
